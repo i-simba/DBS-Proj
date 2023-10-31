@@ -8,7 +8,8 @@ import { useSelector } from "react-redux";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
+      <Link to="/"/>
       <Routes>
         <Route exact path ="/" element ={<Home/>}/>
       </Routes>
