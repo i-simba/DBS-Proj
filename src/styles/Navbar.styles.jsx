@@ -161,7 +161,7 @@ export const MenuChild = styled.div`
 
     border-right: 2px solid gray;
 
-    @media (max-width: 699px) and (min-width: 100px) {
+    @media (max-width: 699px) {
         width: 35%;
         margin-left: 15px;
     }

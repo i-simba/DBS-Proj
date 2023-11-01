@@ -46,11 +46,11 @@ export const GlobalTitleContainer = styled.div`
     margin: 1.5rem;
     padding-left: 5rem;
 
+    color: ${COLORS.sub};
+
     @media (max-width: 699px) {
-        display: flex;
-        justify-content: center;
         margin: 0.5rem;
-        padding-left: 0;
+        padding-left: 0.5rem;
     }
 `
 
@@ -58,5 +58,7 @@ export const GlobalTitle = styled.h1`
     height: fit-content;
     width: fit-content;
 
-    color: ${COLORS.sub}
+    @media (max-width: 699px) {
+        font-size: 1.25rem;
+    }
 `
