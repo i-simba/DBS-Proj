@@ -135,7 +135,7 @@ export const DetailsContainer = styled.div`
 
     border-bottom: 2px solid gray;
 
-    background: linear-gradient(to bottom, ${COLORS.main}, 25%, ${COLORS.light});
+    background: linear-gradient(to top, ${COLORS.main}, 35%, ${COLORS.light});
 
     @media (max-width: 699px) {
         border-bottom: 1px dashed gray;

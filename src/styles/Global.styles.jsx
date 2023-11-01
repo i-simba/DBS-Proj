@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const COLORS = {
     main: '#1B1B1B',
     med: '#252624',
-    light: '#353634',
+    light: '#0F0F0F',
     sub: '#C75233',
     text: '#FFFFFF',
     offWhite: '#F0F0F0',
@@ -18,6 +18,7 @@ export const GlobalBody = styled.div`
 
     height: auto;
     width: 100vw;
+    max-width: 100%;
 
     margin-top: 60px;
     
@@ -37,4 +38,14 @@ export const GlobalContent = styled.div`
     max-width: 1920px;
 
     background-color: ${COLORS.light};
+`
+
+export const GlobalTitle = styled.h1`
+    height: fit-content;
+    width: fit-content;
+
+    margin: 0rem;
+    padding-left: 5vw;
+
+    color: ${COLORS.sub}
 `

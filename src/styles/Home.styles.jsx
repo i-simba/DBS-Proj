@@ -12,3 +12,8 @@ export const TrendingContainer = styled.div`
         padding-bottom: 10px;
     }
 `
+
+export const TopBoxContainer = styled.div`
+    height: auto;
+    width: 100%;
+`
