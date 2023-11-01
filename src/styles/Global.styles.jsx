@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const COLORS = {
     main: '#1B1B1B',
+    med: '#252624',
     light: '#353634',
     sub: '#C75233',
     text: '#FFFFFF',
@@ -15,7 +16,7 @@ export const GlobalBody = styled.div`
     position: absolute;
     z-index: -3;
 
-    height: calc(100vh - 60px);
+    height: auto;
     width: 100vw;
 
     margin-top: 60px;
@@ -24,6 +25,10 @@ export const GlobalBody = styled.div`
 `
 
 export const GlobalContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     position: relative;
     z-index: -2;
 

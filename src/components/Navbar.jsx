@@ -26,6 +26,8 @@ const Navbar = () => {
         childRef.current.style.display = "none";
     }
 
+    
+
     return (
         <Container>
             <Wrapper>
