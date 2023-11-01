@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/DBS-Proj/static/js/main.71c4a35e.js",
+    "main.js": "/DBS-Proj/static/js/main.d26d8a4f.js",
     "index.html": "/DBS-Proj/index.html",
-    "main.71c4a35e.js.map": "/DBS-Proj/static/js/main.71c4a35e.js.map"
+    "main.d26d8a4f.js.map": "/DBS-Proj/static/js/main.d26d8a4f.js.map"
   },
   "entrypoints": [
-    "static/js/main.71c4a35e.js"
+    "static/js/main.d26d8a4f.js"
   ]
 }
