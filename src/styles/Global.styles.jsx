@@ -12,6 +12,9 @@ export const GlobalBody = styled.div`
     display: flex;
     justify-content: center;
 
+    position: absolute;
+    z-index: -3;
+
     height: calc(100vh - 60px);
     width: 100vw;
 
@@ -21,6 +24,9 @@ export const GlobalBody = styled.div`
 `
 
 export const GlobalContent = styled.div`
+    position: relative;
+    z-index: -2;
+
     height: calc(100vh - 60px);
     width: 100vw;
     max-width: 1920px;

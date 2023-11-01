@@ -1,9 +1,7 @@
 import { useState } from "react";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import TripOriginIcon from '@mui/icons-material/TripOrigin';
-import LensIcon from '@mui/icons-material/Lens';
-import { Container, SliderButton, SliderDotButtons, SliderImage, SliderIndex, SliderRender } from "../styles/Slider.styles";
+import { Container, SliderButton, SliderDotButtons, SliderImage, SliderIndex, SliderRender, Dotselect, Unselect } from "../styles/Slider.styles";
 
 const Slider = () => {
     /* Temp movie poster images for slider */
@@ -42,6 +40,8 @@ const Slider = () => {
         })
     }
 
+
+
     return (
         <Container>
             <SliderRender>
@@ -61,7 +61,7 @@ const Slider = () => {
             <SliderIndex>
                 {imageUrls.map((_, index) => (
                     <SliderDotButtons onClick={() => setIndex(index)}>
-                        {index === imageIndex ? <LensIcon/> : <TripOriginIcon/>}
+                        {index === imageIndex ? <Unselect/> : <Dotselect/>}
                     </SliderDotButtons>
                 ))}
             </SliderIndex>

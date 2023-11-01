@@ -1,7 +1,10 @@
 import styled from "styled-components";
+import TripOriginIcon from '@mui/icons-material/TripOrigin';
+import LensIcon from '@mui/icons-material/Lens';
 
 export const Container = styled.div`
     position: relative;
+    z-index: -1;
 
     height: 100%;
     width: 100%;
@@ -11,6 +14,9 @@ export const SliderRender = styled.div`
     display: flex;
     overflow: hidden;
 
+    position: relative;
+    z-index: -1;
+
     height: 100%;
     width: 100%;
 `
@@ -18,6 +24,9 @@ export const SliderRender = styled.div`
 export const SliderImage = styled.img`
     display: block;
     object-fit: cover;
+
+    position: relative;
+    z-index: -1;
 
     height: 100%;
     width: 100%;
@@ -33,6 +42,7 @@ export const SliderButton = styled.button`
     display: block;
 
     position: absolute;
+    z-index: -1;
     top: 0;
     bottom: 0;
 
@@ -88,5 +98,17 @@ export const SliderDotButtons = styled.button`
 
         height: 80%;
         width: 80%;
+    }
+`
+
+export const Dotselect = styled(TripOriginIcon)`
+    @media (max-width: 699px) {
+        scale: 0.5;
+    }
+`
+
+export const Unselect = styled(LensIcon)`
+    @media (max-width: 699px) {
+        scale: 0.5;
     }
 `

@@ -12,7 +12,7 @@ const Home = () => {
             <GlobalContent>
                 <div style={{
                     position: "relative",
-                    zIndex: "1",
+                    zIndex: "0",
                     maxWidth: "1300px",
                     aspectRatio: "10/6",
                     width: "100%",

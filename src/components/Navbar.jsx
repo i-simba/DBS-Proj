@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState, useRef } from "react";
 import TheatersIcon from '@mui/icons-material/Theaters';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -30,11 +30,13 @@ const Navbar = () => {
         <Container>
             <Wrapper>
                 <Left>
-                    <Logo>
-                        <TheatersIcon/>
-                        <h4>Movie</h4>
-                        <h4>Bite</h4>
-                    </Logo>
+                    <Link to="/" style={{textDecoration: "none"}}>
+                        <Logo>
+                            <TheatersIcon/>
+                            <h4>Movie</h4>
+                            <h4>Bite</h4>
+                        </Logo>
+                    </Link>
                     <Menu onClick={handleToggle}>
                         {isExpanded ? <ClearIcon/> : <MenuIcon/>}
                         <NavLabel>&nbsp;Menu</NavLabel>
