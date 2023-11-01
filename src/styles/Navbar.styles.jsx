@@ -52,6 +52,7 @@ export const Right = styled.div`
 
 export const NavLabel = styled.label`
     font-size: 95%;
+    cursor: pointer;
 `
 
 export const Logo = styled.div`

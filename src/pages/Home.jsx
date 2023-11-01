@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Slider from "../components/Slider";
-import { GlobalBody, GlobalContent, GlobalTitle } from "../styles/Global.styles";
+import { GlobalBody, GlobalContent, GlobalTitle, GlobalTitleContainer } from "../styles/Global.styles";
 import { TopBoxContainer, TrendingContainer } from "../styles/Home.styles";
 
 const Home = () => {
@@ -12,7 +12,9 @@ const Home = () => {
             <Navbar/>
             <GlobalContent>
                 <TrendingContainer>
-                    <GlobalTitle>Trending</GlobalTitle>
+                    <GlobalTitleContainer>
+                        <GlobalTitle>Trending</GlobalTitle>
+                    </GlobalTitleContainer>
                     <div style={{
                         position: "relative",
                         zIndex: "0",
@@ -25,7 +27,9 @@ const Home = () => {
                     </div>
                 </TrendingContainer>
                 <TopBoxContainer>
-                    <GlobalTitle>Top Box Office (2023)</GlobalTitle>
+                    <GlobalTitleContainer>
+                        <GlobalTitle>Top Box Office (2023)</GlobalTitle>
+                    </GlobalTitleContainer>
                 </TopBoxContainer>
             </GlobalContent>
         </GlobalBody>

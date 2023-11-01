@@ -40,12 +40,23 @@ export const GlobalContent = styled.div`
     background-color: ${COLORS.light};
 `
 
+export const GlobalTitleContainer = styled.div`
+    display: block;
+
+    margin: 1.5rem;
+    padding-left: 5rem;
+
+    @media (max-width: 699px) {
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem;
+        padding-left: 0;
+    }
+`
+
 export const GlobalTitle = styled.h1`
     height: fit-content;
     width: fit-content;
-
-    margin: 0rem;
-    padding-left: 5vw;
 
     color: ${COLORS.sub}
 `
