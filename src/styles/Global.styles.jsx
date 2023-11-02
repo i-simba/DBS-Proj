@@ -33,15 +33,21 @@ export const GlobalContent = styled.div`
     position: relative;
     z-index: -2;
 
-    height: calc(100vh - 60px);
+    height: auto;
     width: 100vw;
-    max-width: 1920px;
+    max-width: 100%;
 
     background-color: ${COLORS.light};
+
+    @media (min-width: 1920px) {
+        max-width: 1920px;
+    }
 `
 
 export const GlobalTitleContainer = styled.div`
     display: block;
+
+    max-width: 100%;
 
     margin: 1.5rem;
     padding-left: 5rem;
@@ -52,6 +58,22 @@ export const GlobalTitleContainer = styled.div`
         margin: 0.5rem;
         padding-left: 0.5rem;
     }
+`
+
+export const GlobalContainer = styled.div`
+    all: unset;
+
+    height: 100%;
+    width: 100%;
+
+    color: ${COLORS.text};
+`
+
+export const GlobalCardContainer = styled.div`
+    height: auto;
+    width: 250px;
+
+    background-color: ${COLORS.med};
 `
 
 export const GlobalTitle = styled.h1`

@@ -1,0 +1,14 @@
+
+
+.slick-slide > div {
+    margin: 0 10px;
+}
+
+.slick-track {
+}
+
+@media (max-width: 699px) {
+    .slick-slide > div {
+        margin: 0.25rem;
+    }
+}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Wrapper, SliderButton, SliderDotButtons, SliderImage, SliderIndex, SliderRender, Dotselect, Unselect, Container, DetailsContainer, MovieTitle, MovieDesc } from "../styles/Slider.styles";
+import { GlobalContainer } from "../styles/Global.styles";
 import { imageUrls } from "../data";
 
 const Slider = () => {
@@ -22,7 +23,7 @@ const Slider = () => {
 
 
     return (
-        <Container>
+        <GlobalContainer>
             <Wrapper>
                 <SliderRender>
                     {imageUrls.map(url => (
@@ -51,7 +52,7 @@ const Slider = () => {
                 <MovieDesc><MovieTitle/>
                 <MovieDesc/>{imageUrls[imageIndex].desc}</MovieDesc>
             </DetailsContainer>
-        </Container>
+        </GlobalContainer>
     );
 }
 

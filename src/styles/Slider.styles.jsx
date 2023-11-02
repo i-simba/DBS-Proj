@@ -3,15 +3,6 @@ import TripOriginIcon from '@mui/icons-material/TripOrigin';
 import LensIcon from '@mui/icons-material/Lens';
 import { COLORS } from "./Global.styles";
 
-export const Container = styled.div`
-    all: unset;
-
-    height: 100%;
-    width: 100%;
-
-    color: ${COLORS.text};
-`
-
 export const Wrapper = styled.div`
     position: relative;
     z-index: -1;
@@ -133,12 +124,12 @@ export const DetailsContainer = styled.div`
     padding-top: 10px;
     padding-bottom: 0.75rem;
 
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid color-mix(in srgb, ${COLORS.light} 90%, white);
 
     background: linear-gradient(to top, ${COLORS.main}, 35%, ${COLORS.light});
 
     @media (max-width: 699px) {
-        border-bottom: 1px dashed gray;
+        border-bottom: 1px dashed color-mix(in srgb, ${COLORS.light} 90%, white);;
     }
 `
 

@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Slider from "../components/Slider";
+import Carousel from "../components/Carousel";
 import { GlobalBody, GlobalContent, GlobalTitle, GlobalTitleContainer } from "../styles/Global.styles";
-import { TopBoxContainer, TrendingContainer } from "../styles/Home.styles";
+import { CarouselContainer, TopBoxContainer, TrendingContainer } from "../styles/Home.styles";
 
 const Home = () => {
 
@@ -30,6 +31,11 @@ const Home = () => {
                     <GlobalTitleContainer>
                         <GlobalTitle>Top Box Office (2023)</GlobalTitle>
                     </GlobalTitleContainer>
+                    <div style={{display: "flex", justifyContent: "center", maxWidth: "100%"}}>
+                        <CarouselContainer>
+                            <Carousel/>
+                        </CarouselContainer>
+                    </div>
                 </TopBoxContainer>
             </GlobalContent>
         </GlobalBody>

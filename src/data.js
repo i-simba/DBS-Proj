@@ -32,3 +32,56 @@ export const imageUrls = [
         desc: "In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole.",
     },
 ];
+
+export const topBox = [
+    {
+        url: "https://i.ebayimg.com/images/g/lzMAAOSwDMRkxPxb/s-l1200.webp",
+        title: "Barbie",
+        gross: "$1,441,484,916",
+    },
+    {
+        url: "https://www.movieposters.com/cdn/shop/files/the-super-mario-bros-movie_7bqmuyso_600x.jpg?v=1683639643",
+        title: "The Super Mario Bros. Movie",
+        gross: "$1,361,772,504",
+    },
+    {
+        url: "https://i.ebayimg.com/images/g/bOMAAOSwGcdkXgSB/s-l1200.webp",
+        title: "Oppenheimer",
+        gross: "$946,926,190",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMDgxOTdjMzYtZGQxMS00ZTAzLWI4Y2UtMTQzN2VlYjYyZWRiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+        title: "Guardians of the Galaxy Vol.3",
+        gross: "$845,555,777",
+    },
+    {
+        url: "https://m.media-amazon.com/images/I/81cwbLBVDbL.jpg",
+        title: "Fast X",
+        gross: "$704,709,660",
+    },
+    {
+        url: "https://m.media-amazon.com/images/I/8105Oc1+FPL.jpg",
+        title: "Spider-Man: Across the Spider-Verse",
+        gross: "$690,032,764",
+    },
+    {
+        url: "https://m.media-amazon.com/images/I/712+XUUvIqL._AC_UF894,1000_QL80_.jpg",
+        title: "The Little Mermaid",
+        gross: "$569,626,289",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BNGFkZTEwNmItMzkyYS00ZmVlLTk3MWEtOWMwNjczZmZiMmQ3XkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg",
+        title: "Mission: Impossible - Dead Reckoning Part One",
+        gross: "$567,535,383",
+    },
+    {
+        url: "https://pixarpost.com/wp-content/uploads/2023/06/Elemental-Bench-Payoff-Poster.jpg",
+        title: "Elemental",
+        gross: "$494,736,575",
+    },
+    {
+        url: "https://www.gamereactor.eu/media/61/marvelhasreleased_3946133.jpg",
+        title: "Ant-Man and the Wasp: Quantumania",
+        gross: "$476,071,180",
+    },
+];
