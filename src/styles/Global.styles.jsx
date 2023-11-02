@@ -45,18 +45,27 @@ export const GlobalContent = styled.div`
 `
 
 export const GlobalTitleContainer = styled.div`
-    display: block;
+    display: flex;
 
     max-width: 100%;
 
     margin: 1.5rem;
     padding-left: 5rem;
 
-    color: ${COLORS.sub};
+    color: ${COLORS.offWhite};
 
     @media (max-width: 699px) {
         margin: 0.5rem;
-        padding-left: 0.5rem;
+        padding-left: 1rem;
+    }
+`
+
+export const GlobalTitle = styled.h1`
+    height: fit-content;
+    width: fit-content;
+
+    @media (max-width: 699px) {
+        font-size: 1.25rem;
     }
 `
 
@@ -73,13 +82,4 @@ export const GlobalCardContainer = styled.div`
     height: auto;
     width: 250px;
 
-`
-
-export const GlobalTitle = styled.h1`
-    height: fit-content;
-    width: fit-content;
-
-    @media (max-width: 699px) {
-        font-size: 1.25rem;
-    }
 `

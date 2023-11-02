@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Slider from "../components/Slider";
 import Carousel from "../components/Carousel";
-import { GlobalBody, GlobalContent, GlobalTitle, GlobalTitleContainer } from "../styles/Global.styles";
-import { CarouselContainer, TopBoxContainer, TrendingContainer } from "../styles/Home.styles";
+import { COLORS, GlobalBody, GlobalContent, GlobalTitle, GlobalTitleContainer } from "../styles/Global.styles";
+import { CarouselContainer, TitleGap, TopContainer, TrendingContainer } from "../styles/Home.styles";
 
 const Home = () => {
 
@@ -14,6 +14,7 @@ const Home = () => {
             <GlobalContent>
                 <TrendingContainer>
                     <GlobalTitleContainer>
+                        <TitleGap/>&ensp;
                         <GlobalTitle>Trending</GlobalTitle>
                     </GlobalTitleContainer>
                     <div style={{
@@ -27,8 +28,9 @@ const Home = () => {
                         <Slider/>
                     </div>
                 </TrendingContainer>
-                <TopBoxContainer>
+                <TopContainer>
                     <GlobalTitleContainer>
+                        <TitleGap/>&ensp;
                         <GlobalTitle>Top Box Office (2023)</GlobalTitle>
                     </GlobalTitleContainer>
                     <div style={{display: "flex", justifyContent: "center", maxWidth: "100%"}}>
@@ -36,7 +38,18 @@ const Home = () => {
                             <Carousel/>
                         </CarouselContainer>
                     </div>
-                </TopBoxContainer>
+                </TopContainer>
+                <TopContainer>
+                    <GlobalTitleContainer>
+                        <TitleGap/>&ensp;
+                        <GlobalTitle>Fan Favorites</GlobalTitle>
+                    </GlobalTitleContainer>
+                    <div style={{display: "flex", justifyContent: "center", maxWidth: "100%"}}>
+                        <CarouselContainer>
+                            <Carousel/>
+                        </CarouselContainer>
+                    </div>
+                </TopContainer>
             </GlobalContent>
         </GlobalBody>
     );

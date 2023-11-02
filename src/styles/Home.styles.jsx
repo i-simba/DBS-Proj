@@ -11,9 +11,11 @@ export const TrendingContainer = styled.div`
     }
 `
 
-export const TopBoxContainer = styled.div`
+export const TopContainer = styled.div`
     height: auto;
     width: 100%;
+
+    margin-top: 25px;
 `
 
 export const CarouselContainer = styled.div`
@@ -26,4 +28,11 @@ export const CarouselContainer = styled.div`
     @media (max-width: 699px) {
         width: 85%;
     }
+`
+
+export const TitleGap = styled.div`
+    height: auto;
+    width: 5px;
+
+    background-color: ${COLORS.sub};
 `
