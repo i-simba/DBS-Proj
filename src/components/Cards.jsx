@@ -30,7 +30,9 @@ const Cards = ({image, title, sub, bday, topBox, fanFav, person, index}) => {
                             </CardSub>
                         )}
                     <div style={{display: "flex", flexDirection: "row", paddingLeft: "0.65rem"}}>
-                        {index + 1}.&ensp;
+                        {person ? '' : `${index + 1}`}
+                        {person ? '' : '.'}
+                        &ensp;
                         <CardTitle>{title}</CardTitle>
                     </div>
                 </div>
