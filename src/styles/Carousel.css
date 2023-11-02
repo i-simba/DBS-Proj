@@ -8,4 +8,14 @@
     .slick-slide > div {
         margin: 0.25rem;
     }
+    .slick-prev:before, .slick-next:before {
+        font-size: 0.5rem;
+        ;
+    }
+    .slick-prev:before {
+        content: "<<";
+    }
+    .slick-next:before {
+        content: ">>";
+    }
 }
