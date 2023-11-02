@@ -129,7 +129,7 @@ export const DetailsContainer = styled.div`
     background: linear-gradient(to top, ${COLORS.main}, 35%, ${COLORS.light});
 
     @media (max-width: 699px) {
-        aspect-ratio: 12/4;
+        aspect-ratio: 10/4;
         border-bottom: 1px dashed color-mix(in srgb, ${COLORS.light} 90%, white);;
     }
 `
