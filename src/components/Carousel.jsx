@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../styles/Carousel.css";
 import Slider from "react-slick";
 import Cards from "./Cards";
-import { topBox, fanFav, topMonth } from "../data";
+import { topBox, fanFav, topMonth, birthMonth } from "../data";
 
 const Carousel = ({caller}) => {
     /* Media Query */
@@ -45,9 +45,11 @@ const Carousel = ({caller}) => {
     var data;
     var isTop = false;
     var isFan = false;
+    var isPerson = false;
     if (caller === "topBox") { data = topBox; isTop = true };
     if (caller === "fanFav") { data = fanFav; isFan = true };
     if (caller === "topMonth") { data = topMonth; isFan = true };
+    if (caller === "person") { data = birthMonth; isPerson = true };
     function getSub(movie) {
         if (isTop) return movie.gross;
         if (isFan) return movie.rating;
@@ -60,13 +62,22 @@ const Carousel = ({caller}) => {
             <Slider {...settings}>
                 {data.map((movie, index ) => [
                     <GlobalCardContainer>
-                        <Cards 
-                            image={movie.url} 
-                            title={movie.title} 
-                            sub={getSub(movie)}
-                            topBox={isTop}
-                            fanFav={isFan}
-                            index={index}/>
+                        {isPerson ? 
+                            <Cards
+                                image={movie.url}
+                                title={movie.name}
+                                sub={movie.age}
+                                bday={movie.day}
+                                person={true}
+                                index={index}/>
+                            :<Cards
+                                image={movie.url} 
+                                title={movie.title} 
+                                sub={getSub(movie)}
+                                topBox={isTop}
+                                fanFav={isFan}
+                                index={index}/>
+                        }
                     </GlobalCardContainer>
                 ])}
             </Slider>

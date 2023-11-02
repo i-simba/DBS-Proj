@@ -8,7 +8,8 @@ export const COLORS = {
     text: '#FFFFFF',
     offWhite: '#F0F0F0',
     starGold: '#F5C518',
-    greenMoney: '#7A9D54'
+    greenMoney: '#7A9D54',
+    blueCalendar: '#A3D3DF',
 };
 
 export const GlobalBody = styled.div`
@@ -113,4 +114,9 @@ export const GlobalCardContainer = styled.div`
     height: auto;
     width: 250px;
 
+    padding-bottom: 1rem;
+
+    @media (max-width: 699px) {
+        padding-bottom: 0;
+    }
 `

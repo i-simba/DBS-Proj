@@ -191,3 +191,66 @@ export const topMonth = [
         rating: "6.9",
     },
 ];
+
+export const birthMonth = [
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMTg0MDc3ODUwOV5BMl5BanBnXkFtZTcwMTk2NjY4Nw@@._V1_FMjpg_UX1000_.jpg",
+        name: "Matthew McConaughey",
+        day: "Nov 4",
+        age: "53",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMjI4NjM1NDkyN15BMl5BanBnXkFtZTgwODgyNTY1MjE@._V1_FMjpg_UX1000_.jpg",
+        name: "Emma Stone",
+        day: "Nov 6",
+        age: "34",
+    },
+    {
+        url: "https://deadline.com/wp-content/uploads/2023/02/Adam-Devine-Credit-Matt-Sayles-e1675962250629.jpg",
+        name: "Adam DeVine",
+        day: "Nov 7",
+        age: "39",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BNDMyNzcyMTA5MV5BMl5BanBnXkFtZTcwNDAyMDY4Mg@@._V1_FMjpg_UX1000_.jpg",
+        name: "Tracy Morgan",
+        day: "Nov 10",
+        age: "54",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMjI0MTg3MzI0M15BMl5BanBnXkFtZTcwMzQyODU2Mw@@._V1_FMjpg_UX1000_.jpg",
+        name: "Leonardo DiCaprio",
+        day: "Nov 11",
+        age: "48",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMTQzMjkwNTQ2OF5BMl5BanBnXkFtZTgwNTQ4MTQ4MTE@._V1_FMjpg_UX1000_.jpg",
+        name: "Ryan Gosling",
+        day: "Nov 12",
+        age: "42",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMjE4NDMwMzc4Ml5BMl5BanBnXkFtZTcwMDg4Nzg4Mg@@._V1_FMjpg_UX1000_.jpg",
+        name: "Gerard Butler",
+        day: "Nov 13",
+        age: "53",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMTY5ODcxMDU4NV5BMl5BanBnXkFtZTcwMjAzNjQyNQ@@._V1_FMjpg_UX1000_.jpg",
+        name: "Rachel McAdams",
+        day: "Nov 17",
+        age: "44",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_FMjpg_UX1000_.jpg",
+        name: "Scarlett Johansson",
+        day: "Nov 22",
+        age: "38",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMTc3MzE1MzcxNl5BMl5BanBnXkFtZTcwNTM1MTA2OA@@._V1_FMjpg_UX1000_.jpg",
+        name: "Miley Cyrus",
+        day: "Nov 23",
+        age: "30",
+    },
+];

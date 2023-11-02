@@ -64,6 +64,11 @@ const Home = () => {
                         <TitleGap/>&ensp;
                         <GlobalSubTitle>Born this Month</GlobalSubTitle>
                     </GlobalTitleContainer>
+                    <div style={{display: "flex", justifyContent: "center", maxWidth: "100%"}}>
+                        <CarouselContainer>
+                            <Carousel caller={"person"}/>
+                        </CarouselContainer>
+                    </div>
                 </TopContainer>
             </GlobalContent>
         </GlobalBody>
