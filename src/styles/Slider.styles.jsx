@@ -77,7 +77,7 @@ export const SliderIndex = styled.div`
     
     translate: -50%;
     
-    gap: 0.85rem;
+    gap: 2rem;
 `
 
 export const SliderDotButtons = styled.button`
