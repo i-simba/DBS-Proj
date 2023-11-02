@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../styles/Carousel.css";
 import Slider from "react-slick";
 import Cards from "./Cards";
-import { topBox, fanFav } from "../data";
+import { topBox, fanFav, topMonth } from "../data";
 
 const Carousel = ({caller}) => {
     /* Media Query */
@@ -21,7 +21,7 @@ const Carousel = ({caller}) => {
             } else if (window.innerWidth >= 900) {
                 setNumSlides(3);
             } else {
-                setNumSlides(2);
+                setNumSlides(3);
             }
         };
 
@@ -45,8 +45,9 @@ const Carousel = ({caller}) => {
     var data;
     var isTop = false;
     var isFan = false;
-    if (caller === "topBox") { data = topBox; isTop = true};
-    if (caller === "fanFav") { data = fanFav; isFan = true};
+    if (caller === "topBox") { data = topBox; isTop = true };
+    if (caller === "fanFav") { data = fanFav; isFan = true };
+    if (caller === "topMonth") { data = topMonth; isFan = true };
     function getSub(movie) {
         if (isTop) return movie.gross;
         if (isFan) return movie.rating;

@@ -138,3 +138,56 @@ export const fanFav = [
         rating: "8.8",
     },
 ];
+
+export const topMonth = [
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BNWI3ZmY4NmItMGQ4My00ODJlLWJlNTktYjk2NzRkODU3YTNlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+        title: "Five Nights at Freddy's",
+        rating: "5.6",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BNjQwOGM2YTItMGYwNC00YTM4LWI0Y2QtZjQ2ZDcyMmRjMTFhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg",
+        title: "Killers of the FLower Moon",
+        rating: "8.1",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BZGYxYTVmMGItODQ4YS00NDZmLTg3ZjUtNjZiMzhlM2NmZjhhXkEyXkFqcGdeQXVyOTQ5Nzg2MTU@._V1_FMjpg_UX1000_.jpg",
+        title: "Old Dads",
+        rating: "6.2",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMjg3N2M3OWUtZGQ3NC00OGI1LTllZDUtMTdiYWQxMTk0YTg2XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg",
+        title: "No Hard Feelings",
+        rating: "6.4",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMmJhYjBkMzgtZGIwMC00YTAzLWE4NTQtYzVkNDVmYjIzODI0XkEyXkFqcGdeQXVyODQxMTI4MjM@._V1_FMjpg_UX1000_.jpg",
+        title: "Saw X",
+        rating: "6.7",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BNWMxYjNhZmEtNDBjZi00ZjFmLWJlZDMtYTVlYjljMmNkZWFhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_FMjpg_UX1000_.jpg",
+        title: "Plain Hustlers",
+        rating: "6.5",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BM2NmMDQ1ZWEtNDU4OS00MGIxLWEyMGMtMTM2YmFkYzNhYmMxXkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_FMjpg_UX1000_.jpg",
+        title: "Saltburn",
+        rating: "7.1",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMzVjZWUzNDUtZTQxMi00N2QzLWJjMzQtZTc4ZTU2YWEzNDA3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+        title: "The Exorcist: Believer",
+        rating: "4.9",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMTA0MmNhNzUtZjVhNC00MmM5LWExYzYtZmQ0ZWEwZTIxMGExXkEyXkFqcGdeQXVyODMyNDEyNjM@._V1_FMjpg_UX1000_.jpg",
+        title: "Reptile",
+        rating: "6.8",
+    },
+    {
+        url: "https://m.media-amazon.com/images/M/MV5BMzc1M2JjOGItNjgwZS00M2E5LWJlN2MtODU4MzU4NDUwMDQzXkEyXkFqcGdeQXVyMTE0ODQyODE0._V1_FMjpg_UX1000_.jpg",
+        title: "Maestro",
+        rating: "6.9",
+    },
+];

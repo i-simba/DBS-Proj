@@ -9,6 +9,12 @@ export const CardImage = styled.img`
 
     flex-shrink: 0;
     flex-grow: 0;
+
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.85;
+    }
 `
 
 export const CardTitle = styled.h4`

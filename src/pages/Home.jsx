@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Slider from "../components/Slider";
 import Carousel from "../components/Carousel";
-import { GlobalBody, GlobalContent, GlobalTitle, GlobalTitleContainer } from "../styles/Global.styles";
+import { GlobalBody, GlobalContent, GlobalTitle, GlobalSubTitle, GlobalTitleContainer } from "../styles/Global.styles";
 import { CarouselContainer, TitleGap, TopContainer, TrendingContainer } from "../styles/Home.styles";
 
 const Home = () => {
@@ -14,7 +14,6 @@ const Home = () => {
             <GlobalContent>
                 <TrendingContainer>
                     <GlobalTitleContainer>
-                        <TitleGap/>&ensp;
                         <GlobalTitle>Trending</GlobalTitle>
                     </GlobalTitleContainer>
                     <div style={{
@@ -30,7 +29,6 @@ const Home = () => {
                 </TrendingContainer>
                 <TopContainer>
                     <GlobalTitleContainer>
-                        <TitleGap/>&ensp;
                         <GlobalTitle>Top Box Office (2023)</GlobalTitle>
                     </GlobalTitleContainer>
                     <div style={{display: "flex", justifyContent: "center", maxWidth: "100%"}}>
@@ -42,13 +40,30 @@ const Home = () => {
                 <TopContainer>
                     <GlobalTitleContainer>
                         <TitleGap/>&ensp;
-                        <GlobalTitle>Fan Favorites</GlobalTitle>
+                        <GlobalSubTitle>Fan Favorites</GlobalSubTitle>
                     </GlobalTitleContainer>
                     <div style={{display: "flex", justifyContent: "center", maxWidth: "100%"}}>
                         <CarouselContainer>
                             <Carousel caller={"fanFav"}/>
                         </CarouselContainer>
                     </div>
+                </TopContainer>
+                <TopContainer>
+                    <GlobalTitleContainer>
+                        <TitleGap/>&ensp;
+                        <GlobalSubTitle>Top Picks this Month</GlobalSubTitle>
+                    </GlobalTitleContainer>
+                    <div style={{display: "flex", justifyContent: "center", maxWidth: "100%"}}>
+                        <CarouselContainer>
+                            <Carousel caller={"topMonth"}/>
+                        </CarouselContainer>
+                    </div>
+                </TopContainer>
+                <TopContainer>
+                    <GlobalTitleContainer>
+                        <TitleGap/>&ensp;
+                        <GlobalSubTitle>Born this Month</GlobalSubTitle>
+                    </GlobalTitleContainer>
                 </TopContainer>
             </GlobalContent>
         </GlobalBody>

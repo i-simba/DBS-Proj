@@ -56,7 +56,7 @@ export const GlobalTitleContainer = styled.div`
     margin: 1.5rem;
     padding-left: 5rem;
 
-    color: ${COLORS.offWhite};
+    color: ${COLORS.sub};
 
     @media (max-width: 699px) {
         margin: 0.5rem;
@@ -70,6 +70,33 @@ export const GlobalTitle = styled.h1`
 
     @media (max-width: 699px) {
         font-size: 1.25rem;
+    }
+`
+
+export const GlobalSubTitleContainer = styled.h2`
+    display: flex;
+
+    max-width: 100%;
+
+    margin: 1.5rem;
+    padding-left: 5rem;
+
+    color: ${COLORS.offWhite};
+
+    @media (max-width: 699px) {
+        margin: 0.5rem;
+        padding-left: 1rem;
+    }
+`
+
+export const GlobalSubTitle = styled.h2`
+    height: fit-content;
+    width: fit-content;
+
+    color: ${COLORS.offWhite};
+
+    @media (max-width: 699px) {
+        font-size: 1rem;
     }
 `
 
