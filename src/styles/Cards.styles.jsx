@@ -15,7 +15,6 @@ export const CardTitle = styled.h4`
     font-weight: 200;
 
     margin-top: 0.05rem;
-    padding-left: 0.25rem;
 `
 
 export const CardSub = styled.h5`

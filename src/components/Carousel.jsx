@@ -57,14 +57,15 @@ const Carousel = ({caller}) => {
     return (
         <GlobalContainer>
             <Slider {...settings}>
-                {data.map(movie => [
+                {data.map((movie, index ) => [
                     <GlobalCardContainer>
                         <Cards 
                             image={movie.url} 
                             title={movie.title} 
                             sub={getSub(movie)}
                             topBox={isTop}
-                            fanFav={isFan}/>
+                            fanFav={isFan}
+                            index={index}/>
                     </GlobalCardContainer>
                 ])}
             </Slider>
