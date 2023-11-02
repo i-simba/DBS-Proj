@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Wrapper, SliderButton, SliderDotButtons, SliderImage, SliderIndex, SliderRender, Dotselect, Unselect, Container, DetailsContainer, MovieTitle, MovieDesc } from "../styles/Slider.styles";
@@ -6,6 +6,7 @@ import { GlobalContainer } from "../styles/Global.styles";
 import { imageUrls } from "../data";
 
 const Slider = () => {
+    /* Slider logic to go next/prev */
     const [imageIndex, setIndex] = useState(0);
     function showNextimage() {
         setIndex(index => {
@@ -20,6 +21,13 @@ const Slider = () => {
         })
     }
 
+    /* Autoplay */
+    useEffect(() => {
+        const autoPlay = setInterval(showNextimage, 3500);
+        return () => {
+        clearInterval(autoPlay);
+        };
+    }, [imageUrls]);
 
 
     return (
@@ -36,7 +44,7 @@ const Slider = () => {
                 <SliderButton onClick={showPrevImage} style={{left: 0, paddingRight: "10%"}}>
                     <ArrowBackIosIcon/>
                 </SliderButton>
-                <SliderButton onClick={showNextimage} style={{right:0, paddingLeft: "10%"}}>
+                <SliderButton id="next" onClick={showNextimage} style={{right:0, paddingLeft: "10%"}}>
                     <ArrowForwardIosIcon/>
                 </SliderButton>
                 <SliderIndex>
