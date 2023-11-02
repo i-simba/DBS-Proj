@@ -14,7 +14,7 @@ const Cards = ({image, title, sub, topBox, fanFav, index}) => {
         <GlobalContainer>
             <div style={{aspectRatio: "2/3"}}>
                 <CardImage src={image}/>
-                <div style={{padding: "0.75rem", height: "20%"}}>
+                <div style={{padding: "0.75rem", height: "25%"}}>
                     <CardSub>
                         {topBox ? <PaidIcon style={{fill: `${COLORS.greenMoney}`, ...iconStyle}}/> : ""}
                         {fanFav ? <StarIcon style={{fill: `${COLORS.starGold}`, ...iconStyle}}/> : ""}

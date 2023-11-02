@@ -23,10 +23,12 @@ export const CarouselContainer = styled.div`
     width: 75%;
     max-width: 100%;
 
+    padding-bottom: 1rem;
+
     border-bottom: 2px solid color-mix(in srgb, ${COLORS.light} 90%, white);
 
     @media (max-width: 699px) {
-        width: 85%;
+        width: 95%;
     }
 `
 

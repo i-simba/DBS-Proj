@@ -21,7 +21,7 @@ const Carousel = ({caller}) => {
             } else if (window.innerWidth >= 900) {
                 setNumSlides(3);
             } else {
-                setNumSlides(3);
+                setNumSlides(2.03);
             }
         };
 
