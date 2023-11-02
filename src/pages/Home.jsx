@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Slider from "../components/Slider";
 import Carousel from "../components/Carousel";
-import { COLORS, GlobalBody, GlobalContent, GlobalTitle, GlobalTitleContainer } from "../styles/Global.styles";
+import { GlobalBody, GlobalContent, GlobalTitle, GlobalTitleContainer } from "../styles/Global.styles";
 import { CarouselContainer, TitleGap, TopContainer, TrendingContainer } from "../styles/Home.styles";
 
 const Home = () => {
@@ -35,7 +35,7 @@ const Home = () => {
                     </GlobalTitleContainer>
                     <div style={{display: "flex", justifyContent: "center", maxWidth: "100%"}}>
                         <CarouselContainer>
-                            <Carousel/>
+                            <Carousel caller={"topBox"}/>
                         </CarouselContainer>
                     </div>
                 </TopContainer>
@@ -46,7 +46,7 @@ const Home = () => {
                     </GlobalTitleContainer>
                     <div style={{display: "flex", justifyContent: "center", maxWidth: "100%"}}>
                         <CarouselContainer>
-                            <Carousel/>
+                            <Carousel caller={"fanFav"}/>
                         </CarouselContainer>
                     </div>
                 </TopContainer>

@@ -7,6 +7,8 @@ export const COLORS = {
     sub: '#C75233',
     text: '#FFFFFF',
     offWhite: '#F0F0F0',
+    starGold: '#F5C518',
+    greenMoney: '#7A9D54'
 };
 
 export const GlobalBody = styled.div`

@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "../styles/Carousel.css";
 import Slider from "react-slick";
 import Cards from "./Cards";
-import { topBox } from "../data";
+import { topBox, fanFav } from "../data";
 
-const Carousel = () => {
+const Carousel = ({caller}) => {
     /* Media Query */
     const [numSlides, setNumSlides] = useState(5);
     useEffect(() => {
@@ -41,14 +41,30 @@ const Carousel = () => {
         slidesToScroll: 2,
     };
 
+    /* Populate base on caller */
+    var data;
+    var isTop = false;
+    var isFan = false;
+    if (caller === "topBox") { data = topBox; isTop = true};
+    if (caller === "fanFav") { data = fanFav; isFan = true};
+    function getSub(movie) {
+        if (isTop) return movie.gross;
+        if (isFan) return movie.rating;
+        return "NULL";
+    }
 
 
     return (
         <GlobalContainer>
             <Slider {...settings}>
-                {topBox.map(movie => [
+                {data.map(movie => [
                     <GlobalCardContainer>
-                        <Cards image={movie.url} title={movie.title} sub={movie.gross}/>
+                        <Cards 
+                            image={movie.url} 
+                            title={movie.title} 
+                            sub={getSub(movie)}
+                            topBox={isTop}
+                            fanFav={isFan}/>
                     </GlobalCardContainer>
                 ])}
             </Slider>
