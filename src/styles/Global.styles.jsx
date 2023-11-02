@@ -73,7 +73,6 @@ export const GlobalCardContainer = styled.div`
     height: auto;
     width: 250px;
 
-    background-color: ${COLORS.med};
 `
 
 export const GlobalTitle = styled.h1`

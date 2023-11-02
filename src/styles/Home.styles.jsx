@@ -17,9 +17,11 @@ export const TopBoxContainer = styled.div`
 `
 
 export const CarouselContainer = styled.div`
-    height: 465px;
+    height: fit-content;
     width: 75%;
     max-width: 100%;
+
+    border-bottom: 2px solid color-mix(in srgb, ${COLORS.light} 90%, white);
 
     @media (max-width: 699px) {
         width: 85%;

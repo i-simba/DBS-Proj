@@ -4,6 +4,7 @@ import { GlobalContainer } from "../styles/Global.styles";
 const Cards = ({image, title, sub}) => {
 
 
+
     return (
         <GlobalContainer>
             <div style={{aspectRatio: "2/3"}}>

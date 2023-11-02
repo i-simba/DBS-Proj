@@ -12,7 +12,9 @@ const Carousel = () => {
     const [numSlides, setNumSlides] = useState(5);
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth >= 1500) {
+            if (window.innerWidth >= 1800) {
+                setNumSlides(6);
+            } else if (window.innerWidth >= 1500) {
                 setNumSlides(5);
             } else if (window.innerWidth >= 1200) {
                 setNumSlides(4);
