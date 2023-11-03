@@ -1,5 +1,5 @@
 import { CardContainer, CardImage, CardSub, CardTitle } from "../styles/Cards.styles";
-import { COLORS, GlobalContainer } from "../styles/Global.styles";
+import { COLORS } from "../styles/Global.styles";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import PaidIcon from '@mui/icons-material/Paid';
 import StarIcon from '@mui/icons-material/Star';
