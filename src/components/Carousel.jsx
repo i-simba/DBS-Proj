@@ -10,6 +10,7 @@ import { topBox, fanFav, topMonth, birthMonth } from "../data";
 const Carousel = ({caller}) => {
     /* Media Query */
     const [numSlides, setNumSlides] = useState(5);
+    const [isArrow, setArrow] = useState(true);
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth >= 1800) {
@@ -22,6 +23,7 @@ const Carousel = ({caller}) => {
                 setNumSlides(3);
             } else {
                 setNumSlides(2.03);
+                setArrow(false);
             }
         };
 
@@ -39,6 +41,7 @@ const Carousel = ({caller}) => {
         speed: 500,
         slidesToShow: numSlides,
         slidesToScroll: 2,
+        arrows: isArrow,
     };
 
     /* Populate base on caller */

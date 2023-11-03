@@ -40,12 +40,17 @@ export const GlobalContent = styled.div`
     width: 100vw;
     max-width: 100%;
 
+    margin-bottom: 300px;
     padding-bottom: 10%;
 
     background-color: ${COLORS.light};
 
     @media (min-width: 1920px) {
         max-width: 1920px;
+        padding-bottom: 5%;
+    }
+    @media (max-width: 699px) {
+        margin-bottom: 200px;
     }
 `
 

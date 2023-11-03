@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Slider from "../components/Slider";
 import Carousel from "../components/Carousel";
 import { GlobalBody, GlobalContent, GlobalTitle, GlobalSubTitle, GlobalTitleContainer } from "../styles/Global.styles";
@@ -71,6 +72,7 @@ const Home = () => {
                     </div>
                 </TopContainer>
             </GlobalContent>
+            <Footer/>
         </GlobalBody>
     );
 }
