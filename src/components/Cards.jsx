@@ -16,7 +16,7 @@ const Cards = ({image, title, sub, bday, topBox, fanFav, person, index}) => {
             <div style={{aspectRatio: person ? "1/1" : "2/3"}}>
                 {person ? <CardImage src={image} style={{borderRadius: "50%"}}/> 
                         : <CardImage src={image}/>}
-                <div style={{padding: "0.75rem", height: "25%"}}>
+                <div style={{padding: "0.75rem", height: person ? "50%" : "30%"}}>
                     {person ? (
                             <CardSub>
                                 <CalendarMonthIcon style={{fill: `${COLORS.blueCalendar}`, ...iconStyle}}/>
