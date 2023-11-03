@@ -58,7 +58,7 @@ const Slider = () => {
                 </SliderIndex>
             </Wrapper>
             <DetailsContainer>
-                <MovieTitle>{imageUrls[imageIndex].title}</MovieTitle>
+                <MovieTitle>{imageUrls[imageIndex].name}</MovieTitle>
                 <MovieDesc>{imageUrls[imageIndex].desc}</MovieDesc>
             </DetailsContainer>
         </GlobalContainer>

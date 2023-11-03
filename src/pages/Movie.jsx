@@ -32,7 +32,7 @@ const Movie = () => {
         <GlobalBody>
             <Navbar/>
             <GlobalContent style={{color: "white"}}>
-                <h1 style={{padding: "20%"}}>{movie.title}</h1>
+                <h1 style={{padding: "20%"}}>{movie.name}</h1>
             </GlobalContent>
             <Footer/>
         </GlobalBody>

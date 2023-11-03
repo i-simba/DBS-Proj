@@ -82,7 +82,7 @@ const Carousel = ({caller}) => {
                                 <Cards
                                     key={movie.id}
                                     image={movie.url} 
-                                    title={movie.title} 
+                                    title={movie.name} 
                                     sub={getSub(movie)}
                                     topBox={isTop}
                                     fanFav={isFan}
