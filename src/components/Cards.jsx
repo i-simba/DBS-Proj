@@ -1,4 +1,4 @@
-import { CardImage, CardSub, CardTitle } from "../styles/Cards.styles";
+import { CardContainer, CardImage, CardSub, CardTitle } from "../styles/Cards.styles";
 import { COLORS, GlobalContainer } from "../styles/Global.styles";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import PaidIcon from '@mui/icons-material/Paid';
@@ -12,7 +12,7 @@ const Cards = ({image, title, sub, bday, topBox, fanFav, person, index}) => {
 
 
     return (
-        <GlobalContainer>
+        <CardContainer>
             <div style={{aspectRatio: person ? "1/1" : "2/3"}}>
                 {person ? <CardImage src={image} style={{borderRadius: "50%"}}/> 
                         : <CardImage src={image}/>}
@@ -37,7 +37,7 @@ const Cards = ({image, title, sub, bday, topBox, fanFav, person, index}) => {
                     </div>
                 </div>
             </div>
-        </GlobalContainer>
+        </CardContainer>
     );
 }
 

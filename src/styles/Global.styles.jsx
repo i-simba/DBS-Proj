@@ -20,6 +20,7 @@ export const GlobalBody = styled.div`
     z-index: -3;
 
     height: auto;
+    min-height: 80vh;
     width: 100vw;
     max-width: 100%;
 

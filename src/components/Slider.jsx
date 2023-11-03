@@ -35,10 +35,10 @@ const Slider = () => {
             <Wrapper>
                 <SliderRender>
                     {imageUrls.map(url => (
-                        <SliderImage
-                            key={url.id}
-                            src={url.url}
-                            style={{translate: `${-100 * imageIndex}%`}}/>
+                            <SliderImage
+                                key={url.id}
+                                src={url.url}
+                                style={{translate: `${-100 * imageIndex}%`}}/>
                     ))}
                 </SliderRender>
                 <SliderButton onClick={showPrevImage} style={{left: 0, paddingRight: "10%"}}>

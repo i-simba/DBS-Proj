@@ -6,6 +6,7 @@ import "../styles/Carousel.css";
 import Slider from "react-slick";
 import Cards from "./Cards";
 import { topBox, fanFav, topMonth, birthMonth } from "../data";
+import { Link } from "react-router-dom";
 
 const Carousel = ({caller}) => {
     /* Media Query */
@@ -66,22 +67,27 @@ const Carousel = ({caller}) => {
                 {data.map((movie, index ) => [
                     <GlobalCardContainer>
                         {isPerson ? 
-                            <Cards
-                                key={movie.id}
-                                image={movie.url}
-                                title={movie.name}
-                                sub={movie.age}
-                                bday={movie.day}
-                                person={true}
-                                index={index}/>
-                            :<Cards
-                                key={movie.id}
-                                image={movie.url} 
-                                title={movie.title} 
-                                sub={getSub(movie)}
-                                topBox={isTop}
-                                fanFav={isFan}
-                                index={index}/>
+                            <Link to={`/movie/${movie.id}`} style={{textDecoration: "none"}}>
+                                <Cards
+                                    key={movie.id}
+                                    image={movie.url}
+                                    title={movie.name}
+                                    sub={movie.age}
+                                    bday={movie.day}
+                                    person={true}
+                                    index={index}/>
+                            </Link>
+                            :
+                            <Link to={`/movie/${movie.id}`} style={{textDecoration: "none"}}>
+                                <Cards
+                                    key={movie.id}
+                                    image={movie.url} 
+                                    title={movie.title} 
+                                    sub={getSub(movie)}
+                                    topBox={isTop}
+                                    fanFav={isFan}
+                                    index={index}/>
+                            </Link>
                         }
                     </GlobalCardContainer>
                 ])}
