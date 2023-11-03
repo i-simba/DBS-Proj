@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import { Wrapper, SliderButton, SliderDotButtons, SliderImage, SliderIndex, SliderRender, Dotselect, Unselect, DetailsContainer, MovieTitle, MovieDesc } from "../styles/Slider.styles";
+import { Wrapper, SliderButton, SliderDotButtons, SliderImage, SliderIndex, SliderRender, Dotselect, Unselect, DetailsContainer, MovieTitle, MovieDesc, ImgLink } from "../styles/Slider.styles";
 import { GlobalContainer } from "../styles/Global.styles";
 import { imageUrls } from "../data";
 
@@ -35,10 +35,12 @@ const Slider = () => {
             <Wrapper>
                 <SliderRender>
                     {imageUrls.map(url => (
-                            <SliderImage
+                        <ImgLink to={`/movie/${url.id}`} style={{textDecoration: "none"}}>
+                            <SliderImage 
                                 key={url.id}
                                 src={url.url}
                                 style={{translate: `${-100 * imageIndex}%`}}/>
+                        </ImgLink>
                     ))}
                 </SliderRender>
                 <SliderButton onClick={showPrevImage} style={{left: 0, paddingRight: "10%"}}>

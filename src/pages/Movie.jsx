@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { GlobalBody, GlobalContent } from "../styles/Global.styles";
 import { useLocation } from "react-router-dom";
-import { topBox, fanFav, topMonth } from "../data";
+import { imageUrls, topBox, fanFav, topMonth } from "../data";
 
 const Movie = () => {
     /* Split path to get movie location & ID */
@@ -18,6 +18,7 @@ const Movie = () => {
     if ( locCode === "TB" ) { data = topBox; }
     else if ( locCode === "FF" ) { data = fanFav; }
     else if ( locCode === "TM" ) { data = topMonth; }
+    else if ( locCode === "SL" ) { data = imageUrls; }
 
     /* Get the right movie */
     var movie;

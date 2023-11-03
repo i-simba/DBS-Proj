@@ -2,6 +2,7 @@ import styled from "styled-components";
 import TripOriginIcon from '@mui/icons-material/TripOrigin';
 import LensIcon from '@mui/icons-material/Lens';
 import { COLORS } from "./Global.styles";
+import { Link } from "react-router-dom";
 
 export const Wrapper = styled.div`
     position: relative;
@@ -20,6 +21,22 @@ export const SliderRender = styled.div`
 
     height: 100%;
     width: 100%;
+`
+
+export const ImgLink = styled(Link)`
+    display: block;
+    object-fit: cover;
+
+    position: relative;
+    z-index: -1;
+
+    height: 100%;
+    width: 100%;
+
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    transition: translate 300ms ease-in-out;
 `
 
 export const SliderImage = styled.img`
