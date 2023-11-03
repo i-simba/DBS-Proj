@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { GlobalBody, GlobalContent } from "../styles/Global.styles";
 import { useLocation } from "react-router-dom";
 import { birthMonth } from "../data";
+import { TabTitle } from "..";
 
 const Actors = () => {
     /* Get actor ID from path name */
@@ -15,6 +16,9 @@ const Actors = () => {
     for ( let i = 0; i < birthMonth.length; i++ ) {
         if ( birthMonth[i].id === locID[2] ) { actor = birthMonth[i]; }
     }
+
+    /* Set Page Title */
+    TabTitle("MovieBite | " + actor.name);
 
 
 

@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { GlobalBody, GlobalContent } from "../styles/Global.styles";
 import { useLocation } from "react-router-dom";
 import { imageUrls, topBox, fanFav, topMonth } from "../data";
+import { TabTitle } from "..";
 
 const Movie = () => {
     /* Split path to get movie location & ID */
@@ -25,6 +26,9 @@ const Movie = () => {
     for ( let i = 0; i < data.length; i++ ) {
         if ( data[i].id === locParts[2] ) { movie = data[i]; }
     }
+
+    /* Set Page Title */
+    TabTitle("MovieBite | " + movie.name);
 
 
 

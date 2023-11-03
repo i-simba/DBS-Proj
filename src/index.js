@@ -8,3 +8,7 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+export const TabTitle = (newTitle) => {
+  return (document.title= newTitle);
+};

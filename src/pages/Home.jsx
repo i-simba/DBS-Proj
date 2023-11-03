@@ -5,8 +5,12 @@ import Slider from "../components/Slider";
 import Carousel from "../components/Carousel";
 import { GlobalBody, GlobalContent, GlobalTitle, GlobalSubTitle, GlobalTitleContainer } from "../styles/Global.styles";
 import { CarouselContainer, TitleGap, TopContainer, TrendingContainer } from "../styles/Home.styles";
+import { TabTitle } from "..";
 
 const Home = () => {
+    /* Set Page Title */
+    TabTitle("MovieBite | Home");
+
 
 
     return (
