@@ -76,8 +76,12 @@ export const SliderIndex = styled.div`
     left: 50%;
     
     translate: -50%;
-    
+
     gap: 2rem;
+
+    @media (max-width: 699px) {
+        gap: 0.5rem;
+    }
 `
 
 export const SliderDotButtons = styled.button`
