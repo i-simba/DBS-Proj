@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import { Wrapper, SliderButton, SliderDotButtons, SliderImage, SliderIndex, SliderRender, Dotselect, Unselect, Container, DetailsContainer, MovieTitle, MovieDesc } from "../styles/Slider.styles";
+import { Wrapper, SliderButton, SliderDotButtons, SliderImage, SliderIndex, SliderRender, Dotselect, Unselect, DetailsContainer, MovieTitle, MovieDesc } from "../styles/Slider.styles";
 import { GlobalContainer } from "../styles/Global.styles";
 import { imageUrls } from "../data";
 
@@ -27,7 +27,7 @@ const Slider = () => {
         return () => {
         clearInterval(autoPlay);
         };
-    }, [imageUrls]);
+    }, []);
 
 
     return (
@@ -36,7 +36,7 @@ const Slider = () => {
                 <SliderRender>
                     {imageUrls.map(url => (
                         <SliderImage
-                            key={url}
+                            key={url.id}
                             src={url.url}
                             style={{translate: `${-100 * imageIndex}%`}}/>
                     ))}
@@ -48,8 +48,8 @@ const Slider = () => {
                     <ArrowForwardIosIcon/>
                 </SliderButton>
                 <SliderIndex>
-                    {imageUrls.map((_, index) => (
-                        <SliderDotButtons onClick={() => setIndex(index)}>
+                    {imageUrls.map((url, index) => (
+                        <SliderDotButtons key={url.id} onClick={() => setIndex(index)}>
                             {index === imageIndex ? <Unselect/> : <Dotselect/>}
                         </SliderDotButtons>
                     ))}
@@ -57,8 +57,7 @@ const Slider = () => {
             </Wrapper>
             <DetailsContainer>
                 <MovieTitle>{imageUrls[imageIndex].title}</MovieTitle>
-                <MovieDesc><MovieTitle/>
-                <MovieDesc/>{imageUrls[imageIndex].desc}</MovieDesc>
+                <MovieDesc>{imageUrls[imageIndex].desc}</MovieDesc>
             </DetailsContainer>
         </GlobalContainer>
     );

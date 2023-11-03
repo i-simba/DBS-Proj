@@ -67,6 +67,7 @@ const Carousel = ({caller}) => {
                     <GlobalCardContainer>
                         {isPerson ? 
                             <Cards
+                                key={movie.id}
                                 image={movie.url}
                                 title={movie.name}
                                 sub={movie.age}
@@ -74,6 +75,7 @@ const Carousel = ({caller}) => {
                                 person={true}
                                 index={index}/>
                             :<Cards
+                                key={movie.id}
                                 image={movie.url} 
                                 title={movie.title} 
                                 sub={getSub(movie)}
