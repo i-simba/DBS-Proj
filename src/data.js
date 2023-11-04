@@ -6,36 +6,48 @@ export const imageUrls = [
         url: "https://images7.alphacoders.com/131/1314905.jpeg",
         name: "Oppenheimer",
         desc: "During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945, as they witness the world's first nuclear explosion, forever changing the course of history.",
+        trailer: "https://www.youtube.com/embed/bK6ldnjE3Y0",
+        genre: "Drama",
     },
     {
         id: "SL-5838",
         url: "https://images8.alphacoders.com/133/1331131.jpeg",
         name: "Barbie",
         desc: "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+        trailer: "https://www.youtube.com/embed/pBk4NYhWNMM",
+        genre: "Comedy",
     },
     {
         id: "SL-1039",
         url: "https://wallpapercave.com/wp/wp5281731.jpg",
         name: "Avengers: End Game",
         desc: "Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.",
+        trailer: "https://www.youtube.com/embed/TcMBFSGVi1c",
+        genre: "Action",
     },
     {
         id: "SL-3945",
         url: "https://images7.alphacoders.com/132/1324265.jpeg",
         name: "Avatar: The way of Water",
         desc: "Jake Sully and Ney'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora. When an ancient threat resurfaces, Jake must fight a difficult war against the humans.",
+        trailer: "https://www.youtube.com/embed/a8Gx8wiNbs8",
+        genre: "Action",
     },
     {
         id: "SL-3066",
         url: "https://images6.alphacoders.com/112/1122542.jpg",
         name: "Parasite",
         desc: "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+        trailer: "https://www.youtube.com/embed/isOGD_7hNIY",
+        genre: "Drama",
     },
     {
         id: "SL-4203",
         url: "https://i.pinimg.com/originals/e9/24/0b/e9240b7c5b29b0fb4aa86304a03287e8.jpg",
         name: "Interstellar",
         desc: "In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole.",
+        trailer: "https://www.youtube.com/embed/2LqzF5WauAw",
+        genre: "Action",
     },
 ];
 
@@ -298,5 +310,194 @@ export const birthMonth = [
         name: "Miley Cyrus",
         day: "Nov 23",
         age: "30",
+    },
+];
+
+export const directors = [
+    {
+        id: "5779",
+        url: "https://m.media-amazon.com/images/M/MV5BNjE3NDQyOTYyMV5BMl5BanBnXkFtZTcwODcyODU2Mw@@._V1_FMjpg_UX1000_.jpg",
+        name: "Christopher Nolan",
+        bio: "Best known for his cerebral, often nonlinear, storytelling, acclaimed writer-director Christopher Nolan was born on July 30, 1970, in London, England. Over the course of 15 years of filmmaking, Nolan has gone from low-budget independent films to working on some of the biggest blockbusters ever made.",
+    },
+    {
+        id: "5838",
+        url: "https://m.media-amazon.com/images/M/MV5BNDE5MTIxMTMzMV5BMl5BanBnXkFtZTcwMjMxMDYxOQ@@._V1_FMjpg_UX1000_.jpg",
+        name: "Greta Gurwig",
+        bio: "Greta Gerwig is an American actress, playwright, screenwriter, and director. She has collaborated with Noah Baumbach on several films, including Greenberg (2010), Frances Ha (2012), for which she earned a Golden Globe nomination, and Mistress America (2015). Gerwig made her solo directorial debut with the critically acclaimed comedy-drama film Lady Bird (2017), which she also wrote, and has also had starring roles in the films Damsels in Distress (2011), Jackie (2016), and 20th Century Women (2016).",
+    },
+    {
+        id: "1039",
+        url: "https://m.media-amazon.com/images/M/MV5BMTc2NjM5MTM0Ml5BMl5BanBnXkFtZTgwMTY3ODczNjM@._V1_FMjpg_UX1000_.jpg",
+        name: "Anthony Russo",
+        bio: "Anthony J. Russo is an American filmmaker and producer who works alongside his brother Joseph Russo. They have directed You, Me and Dupree, Cherry and the Marvel films Captain America: The Winter Soldier, Captain America: Civil War, Avengers: Infinity War and Avengers: Endgame. Endgame is one of the highest grossing films of all time.",
+    },
+    {
+        id: "3945",
+        url: "https://m.media-amazon.com/images/M/MV5BMjI0MjMzOTg2MF5BMl5BanBnXkFtZTcwMTM3NjQxMw@@._V1_FMjpg_UX1000_.jpg",
+        name: "James Cameron",
+        bio: "James Francis Cameron was born on August 16, 1954 in Kapuskasing, Ontario, Canada. He moved to the United States in 1971. The son of an engineer, he majored in physics at California State University before switching to English, and eventually dropping out. He then drove a truck to support his screenwriting ambition. He landed his first professional film job as art director, miniature-set builder, and process-projection supervisor on Roger Corman's Battle Beyond the Stars (1980) and had his first experience as a director with a two week stint on Piranha II: The Spawning (1982) before being fired.",
+    },
+    {
+        id: "3066",
+        url: "https://m.media-amazon.com/images/M/MV5BOGVmYzZkODgtNTQ3OS00MzgxLTllOGUtZTFjNDc4MmE1ZDcwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+        name: "Bong Joon Ho",
+        bio: "Bong Joon-ho is a South Korean filmmaker. The recipient of three Academy Awards, his filmography is characterized by emphasis on social themes, genre-mixing, black humor, and sudden tone shifts. He first became known to audiences and achieved a cult following with his directorial debut film, the black comedy Barking Dogs Never Bite (2000), before achieving both critical and commercial success with his subsequent films: the crime thriller Memories of Murder (2003), the monster film The Host (2006), the science fiction action film Snowpiercer (2013), and the black comedy thriller Parasite (2019), all of which are among the highest-grossing films in South Korea, with Parasite also being the highest-grossing South Korean film in history.",
+    },
+    {
+        id: "4203",
+        url: "https://m.media-amazon.com/images/M/MV5BNjE3NDQyOTYyMV5BMl5BanBnXkFtZTcwODcyODU2Mw@@._V1_FMjpg_UX1000_.jpg",
+        name: "Christopher Nolan",
+        bio: "Best known for his cerebral, often nonlinear, storytelling, acclaimed writer-director Christopher Nolan was born on July 30, 1970, in London, England. Over the course of 15 years of filmmaking, Nolan has gone from low-budget independent films to working on some of the biggest blockbusters ever made.",
+    },
+    {
+        id: "8832",
+        url: "",
+        name: "",
+    },
+    {
+        id: "7238",
+        url: "",
+        name: "",
+    },
+    {
+        id: "6051",
+        url: "",
+        name: "",
+    },
+    {
+        id: "5150",
+        url: "",
+        name: "",
+    },
+    {
+        id: "1174",
+        url: "",
+        name: "",
+    },
+    {
+        id: "8677",
+        url: "",
+        name: "",
+    },
+    {
+        id: "7071",
+        url: "",
+        name: "",
+    },
+    {
+        id: "3386",
+        url: "",
+        name: "",
+    },
+    {
+        id: "1078",
+        url: "",
+        name: "",
+    },
+    {
+        id: "7182",
+        url: "",
+        name: "",
+    },
+    {
+        id: "2593",
+        url: "",
+        name: "",
+    },
+    {
+        id: "2213",
+        url: "",
+        name: "",
+    },
+    {
+        id: "1015",
+        url: "",
+        name: "",
+    },
+    {
+        id: "9354",
+        url: "",
+        name: "",
+    },
+    {
+        id: "8847",
+        url: "",
+        name: "",
+    },
+    {
+        id: "5075",
+        url: "",
+        name: "",
+    },
+    {
+        id: "3841",
+        url: "",
+        name: "",
+    },
+    {
+        id: "4249",
+        url: "",
+        name: "",
+    },
+    {
+        id: "7222",
+        url: "",
+        name: "",
+    },
+    {
+        id: "8740",
+        url: "",
+        name: "",
+    },
+    {
+        id: "1582",
+        url: "",
+        name: "",
+    },
+    {
+        id: "7165",
+        url: "",
+        name: "",
+    },
+    {
+        id: "1276",
+        url: "",
+        name: "",
+    },
+    {
+        id: "3204",
+        url: "",
+        name: "",
+    },
+    {
+        id: "4484",
+        url: "",
+        name: "",
+    },
+    {
+        id: "3580",
+        url: "",
+        name: "",
+    },
+    {
+        id: "7026",
+        url: "",
+        name: "",
+    },
+    {
+        id: "5588",
+        url: "",
+        name: "",
+    },
+    {
+        id: "8089",
+        url: "",
+        name: "",
+    },
+    {
+        id: "3830",
+        url: "",
+        name: "",
     },
 ];
