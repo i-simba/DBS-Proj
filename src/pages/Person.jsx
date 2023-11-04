@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 import { birthMonth } from "../data";
 import { TabTitle } from "..";
 
-const Actors = () => {
+const Person = () => {
     /* Get actor ID from path name */
     const location = useLocation();
     const locID = location.pathname.split('/');
@@ -33,4 +33,4 @@ const Actors = () => {
     );
 }
 
-export default Actors;
+export default Person;

@@ -67,7 +67,7 @@ const Carousel = ({caller}) => {
                 {data.map((movie, index ) => [
                     <GlobalCardContainer>
                         {isPerson ? 
-                            <Link to={`/actor/${movie.id}`} style={{textDecoration: "none"}}>
+                            <Link to={`/person/${movie.id}`} style={{textDecoration: "none"}}>
                                 <Cards
                                     key={movie.id}
                                     image={movie.url}

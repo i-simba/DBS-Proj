@@ -69,7 +69,6 @@ const Navbar = () => {
                         <MenuTitle>People & Studio</MenuTitle>
                             <MenuSelection>Directors</MenuSelection>
                             <MenuSelection>Actors</MenuSelection>
-                            <MenuSelection>Actresses</MenuSelection>
                             <MenuSelection>Studio</MenuSelection>
                     </MenuChild>
                 </ExpandingChild>
