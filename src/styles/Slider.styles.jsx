@@ -147,11 +147,11 @@ export const DetailsContainer = styled.div`
 
     border-bottom: 2px solid color-mix(in srgb, ${COLORS.light} 90%, white);
 
-    background: linear-gradient(to top, ${COLORS.main}, 35%, ${COLORS.light});
+    background: linear-gradient(0.25turn, ${COLORS.light}, ${COLORS.med}, ${COLORS.light});
 
     @media (max-width: 699px) {
         aspect-ratio: 10/4;
-        border-bottom: 1px dashed color-mix(in srgb, ${COLORS.light} 90%, white);;
+        border-bottom: 1px dashed color-mix(in srgb, ${COLORS.light} 90%, white);
     }
 `
 
